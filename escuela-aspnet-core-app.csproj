@@ -7,4 +7,10 @@
     <RootNamespace>escuela_aspnet_core_app</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Views\Escuela\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Escuela\" />
+  </ItemGroup>
 </Project>
