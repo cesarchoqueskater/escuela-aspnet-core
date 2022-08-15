@@ -12,6 +12,8 @@ namespace escuela_aspnet_core_app.Controllers
             escuela.AñoFundacion = 2005;
             escuela.EscuelaID = Guid.NewGuid().ToString();
             escuela.Nombre = "Platzi School";
+
+            ViewBag.CosaDinamica = "La Monja";
             return View(escuela);
         }
     }
