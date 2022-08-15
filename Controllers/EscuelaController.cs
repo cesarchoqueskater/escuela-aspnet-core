@@ -12,6 +12,10 @@ namespace escuela_aspnet_core_app.Controllers
             escuela.AñoDeCreación = 2005;
             escuela.UniqueId = Guid.NewGuid().ToString();
             escuela.Nombre = "Platzi School";
+            escuela.Ciudad = "Lima";
+            escuela.Pais = "Peru";
+            escuela.TipoEscuela = TiposEscuela.Secundaria;
+            escuela.Dirección = "Chorrillo, Lima";
 
             ViewBag.CosaDinamica = "La Monja";
             return View(escuela);

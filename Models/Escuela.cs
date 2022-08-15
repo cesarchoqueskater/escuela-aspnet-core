@@ -15,6 +15,12 @@ namespace escuela_aspnet_core_app.Models
         public TiposEscuela TipoEscuela { get; set; }
         public List<Curso> Cursos { get; set; }
 
+
+        public Escuela()
+        {
+
+        }
+
         public Escuela(string nombre, int año) => (Nombre, AñoDeCreación) = (nombre, año);
 
         public Escuela(string nombre, int año, 
@@ -26,14 +32,10 @@ namespace escuela_aspnet_core_app.Models
             Ciudad = ciudad;
         }
 
-        public Escuela()
-        {
-
-        }
 
         public override string ToString()
         {
-            return $"Nombre: \"{Nombre}\", Tipo: {TipoEscuela} {System.Environment.NewLine} Pais: {Pais}, Ciudad:{Ciudad}";
+            return $"Nombre: \"{Nombre}\", Tipo: \"{TipoEscuela} {System.Environment.NewLine}\" , Pais: \"{Pais}\", Ciudad: \"{Ciudad}\"";
         }
 
        
