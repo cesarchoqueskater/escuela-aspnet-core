@@ -12,17 +12,18 @@
 <hr />
 
 <p>
-    <p>Nombre: @Model.Nombre</p> 
-    <p>Id: @Model.UniqueId</p>
+<p>Nombre: @Model.Nombre</p>
+<p>Id: @Model.UniqueId</p>
 </p>
 
 <strong>Desde la vista Parcial</strong>
 <br />
 <hr />
 
-<partial name="AsignaturaSimple" />
-
-
+@*
+    <partial name="AsignaturaSimple" />
+*@
+<partial name="ObjetoEscuelaSimple" />
 
 <h3>Fecha: @ViewBag.Fecha</h3>
 
