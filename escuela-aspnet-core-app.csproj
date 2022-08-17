@@ -10,9 +10,17 @@
   <ItemGroup>
     <None Remove="Views\Escuela\" />
     <None Remove="Views\Asignatura\" />
+    <None Remove="Models\EscuelaContext.css" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Escuela\" />
     <Folder Include="Views\Asignatura\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\EscuelaContext.cs" />
   </ItemGroup>
 </Project>
