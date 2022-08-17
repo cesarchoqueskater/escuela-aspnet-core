@@ -1,0 +1,34 @@
+﻿@*
+    @Modal Asignatura
+*@
+
+
+@*
+    @Model ObjetoEscuelaBase
+*@
+
+@*
+    <p>
+        <p>Nombre: @Model.Nombre</p>
+        <p>Id: @Model.UniqueId</p>
+    </p>
+*@
+
+<table class="table table-dark table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in @Model)
+        {
+            <tr>
+                <td>@obj.UniqueId</td>
+                <td>@obj.Nombre</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

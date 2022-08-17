@@ -9,16 +9,18 @@
 
     <strong>Desde la vista Parcial</strong>
 
-    @foreach (var asignatura in Model)
-    {
+
     @*
-     <partial name="AsignaturaSimple" model="asignatura" />
+        @foreach (var asignatura in Model)
+        {
+        @*
+         <partial name="AsignaturaSimple" model="asignatura" />
+
+        <partial name="ObjetoEscuelaSimple" model="asignatura" />
+
+        }
+
     *@
-    <partial name="ObjetoEscuelaSimple" model="asignatura" />
 
-    }
+    <partial name="ListObjetoEscuela" />
 
-
-
-
-    
